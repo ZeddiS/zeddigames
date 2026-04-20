@@ -198,8 +198,6 @@ export const useStore = create<AppStore>((set, get) => ({
 
   // ─── Actions ─────────────────────────────────────────────────────────────
 
-  setActiveSection: (activeSection) => set({ activeSection, selectedGameId: null }),
-
   loadGames: async () => {
     const games = await invoke<Game[]>("get_all_games");
     set({ games });

@@ -1,64 +1,71 @@
 # ZeddiGames Launcher
 
-> Unifikovaná herní platforma — Steam, Epic, GOG a standalone hry na jednom místě.
+**Tvoje herní platforma. Zdarma.**
 
-![Version](https://img.shields.io/badge/version-0.1.0-ff6b00)
-![Platform](https://img.shields.io/badge/platform-Windows-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+ZeddiGames Launcher shromáždí všechny tvoje hry na jednom místě — Steam, Epic Games, GOG i standalone hry. Spouštěj je, sleduj herní čas a prohlíži nové tituly bez přepínání mezi platformami.
 
-## ✨ Funkce
+[![Nejnovější verze](https://img.shields.io/github/v/release/ZeddiS/zeddigames?label=verze&color=ff6b00)](https://github.com/ZeddiS/zeddigames/releases/latest)
+[![Windows](https://img.shields.io/badge/Windows-10%2F11-blue)](https://github.com/ZeddiS/zeddigames/releases/latest)
+[![Zdarma](https://img.shields.io/badge/cena-zdarma-brightgreen)](https://github.com/ZeddiS/zeddigames/releases/latest)
 
-- 🎯 **Auto-detekce her** — Steam, Epic, GOG, standalone EXE
-- 🏪 **Herní obchod** — 500 000+ her přes RAWG.io API
-- 👥 **Steam komunita** — profil, přátelé, achievementy
-- ⬇ **Download manager** — SteamCMD integrace
-- ⏱ **Sledování herního času** — pro všechny platformy
-- 🔔 **Auto-aktualizace** — z GitHub Releases
-- 🎨 **3 témata** — Steam Dark, Light, ZeddiGames Orange
-- 🔐 **ZeddiGames účet** — registrace s rolemi (user, premium, moderator, admin)
+---
 
-## 🚀 Stažení
+## ⬇️ Stažení
 
-👉 [Nejnovější verze](https://github.com/ZeddiS/zeddigames/releases/latest)
+👉 **[Stáhnout nejnovější verzi](https://github.com/ZeddiS/zeddigames/releases/latest)**
 
-## 🛠️ Technologie
+| Soubor | Popis |
+|--------|-------|
+| `ZeddiGames_Launcher_x64-setup.exe` | Doporučený instalátor pro Windows |
+| `ZeddiGames_Launcher_x64.msi` | MSI balíček |
 
-| Vrstva | Tech |
-|--------|------|
-| Frontend | React 19 + TypeScript + Tailwind CSS v4 |
-| Backend | Rust + Tauri 2.0 |
-| Databáze | SQLite (rusqlite bundled) |
-| HTTP | reqwest (rustls-tls) |
-| Web | PHP 8 + MySQL |
+**Požadavky:** Windows 10 nebo novější (64-bit)
 
-## 🔧 Vývoj
+---
 
-```bash
-# Požadavky: Rust (MSVC toolchain), Node.js 20+
+## ✨ Co umí
 
-# Spustit dev server (Windows)
-dev.bat
+| Funkce | Popis |
+|--------|-------|
+| 🎯 **Auto-detekce her** | Automaticky najde hry ze Steamu, Epicu, GOGu a standalone instalací |
+| 🏪 **Herní obchod** | Prohlíž přes 500 000 titulů s hodnoceními a screenshoty |
+| 👥 **Steam komunita** | Profil, přátelé a achievementy přímo v launcheru |
+| ⬇️ **Stahování her** | Stahuj Steam hry přes SteamCMD (oficiální nástroj Valve) |
+| ⏱️ **Herní čas** | Sledování pro každou hru a platformu |
+| 🔔 **Auto-aktualizace** | Launcher se aktualizuje sám při každém spuštění |
+| 🎨 **3 barevná témata** | Steam Dark, Light a ZeddiGames Orange |
+| 🔐 **ZeddiGames účet** | Online profil a herní statistiky |
 
-# nebo manuálně:
-npm run tauri dev
-```
+---
 
 ## 🌐 Web
 
-Web je dostupný na [zeddihub.eu/games](https://zeddihub.eu/games/)
+[**zeddihub.eu/games**](https://zeddihub.eu/games/) — oficiální web s downloadem, přihlášením a changelogem
 
-## 📁 Struktura projektu
+---
 
-```
-zeddigames/
-  src/            # React frontend
-  src-tauri/      # Rust/Tauri backend
-  web/            # PHP web pro zeddihub.eu/games/
-    api/          # PHP API (auth, version)
-    admin/        # Admin panel
-  public/         # Statické soubory
-```
+## ❓ Časté dotazy
+
+**Je launcher zdarma?**
+Ano, ZeddiGames Launcher je a vždy bude zdarma.
+
+**Potřebuji Steam účet?**
+Ne — funguje i bez Steam účtu. Steam integrace (komunita, achievementy) vyžaduje Steam API klíč, který nastavíš v nastavení aplikace.
+
+**Kde se ukládají data?**
+Vše lokálně na tvém PC v `%LOCALAPPDATA%\ZeddiGames\`. Žádná data se neodesílají bez tvého vědomí.
+
+**Funguje na Macu nebo Linuxu?**
+Prozatím pouze Windows. Podpora dalších platforem je plánována.
+
+---
+
+## 📋 Changelog
+
+Přehled změn najdeš na [zeddihub.eu/games/changelog.php](https://zeddihub.eu/games/changelog.php) nebo v [GitHub Releases](https://github.com/ZeddiS/zeddigames/releases).
+
+---
 
 ## 📄 Licence
 
-MIT — ZeddiGames je součást [ZeddiHub](https://zeddihub.eu) ekosystému.
+MIT — volně použitelné. Součást [ZeddiHub](https://zeddihub.eu) ekosystému.
